@@ -1,0 +1,392 @@
+:root {
+  --blanco: #ffffff;
+  --gris1: #FAFAFA;
+  --grisClaro: #F3F4F6;
+  --azulGris: #9698A6;
+  --azul1: #2D314D;
+  --verde: #31D35C;
+  --boton: #81e2af;
+  --celeste: #2BB7DA;
+}
+
+@font-face {
+  font-family: 'public_sansbold';
+  src: url('../fonts/publicsans-bold-webfont.woff2') format('woff2'),
+       url('../fonts/publicsans-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'public_sanslight';
+  src: url('../fonts/publicsans-light-webfont.woff2') format('woff2'),
+       url('../fonts/publicsans-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'public_sansregular';
+  src: url('../fonts/publicsans-regular-webfont.woff2') format('woff2'),
+       url('../fonts/publicsans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@media(width: 1200px){
+  #container {
+    width: 1280px;
+    margin: 0 auto;
+    background: var(--blanco);
+  }
+/*encabezado---------------------------------------------------------------------------------------------*/
+.header{
+width: 1200px;
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+.logo{
+  margin-right: 3%;
+}
+.call-home{
+font-size: 9.5pt;
+background: var(--boton);
+border: none;
+padding: 10px 27px 10px 27px;
+border-radius: 20px;
+color: var(--blanco);
+}
+.bot{
+flex-basis: 29%;
+}
+
+.topnav {
+flex-basis: 100%;
+}
+
+.topnav a {
+float: left;
+display: block;
+color: var(--azul1);
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 15px;
+font-family: "public_sansregular";
+}
+
+.topnav a:hover {
+background-color: #ddd;
+color: white;
+}
+
+.topnav a.logo {
+flex-basis: 2%;
+}
+
+.topnav .icon {
+display: none;
+}
+
+@media screen and (max-width: 600px) {
+.topnav a:not(:first-child) {display: none;}
+.topnav a.icon {
+  float: right;
+  display: block;
+}
+}
+
+@media screen and (max-width: 600px) {
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav.responsive a{
+  float: none;
+  display: block;
+  text-align: center;
+}
+}
+/*cont1---------------------------------------------------------------------------------------------*/
+.cont1{
+width: 1200px;
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+.mobile{
+  display: none;
+}
+
+.desktop{
+display: none;
+}
+
+.contenido{
+display: flex;
+flex-basis: 50%; 
+flex-direction: column;
+justify-content: center;
+}
+
+.titulo{
+color: var(--azul1);
+font-size: 45px;
+font-family: "public_sanslight" !important;
+line-height: 52px;
+}
+
+.parrafo{
+margin-top: -3%;
+line-height: 150%;
+color: var(--azulGris);
+font-family: "public_sanslight" !important;
+margin-bottom: 10%;
+}
+
+.btn-principal{
+display: flex;
+align-self: flex-start;
+font-size: 9pt;
+background: var(--boton);
+border: none;
+padding: 10px 27px 10px 27px;
+border-radius: 20px;
+color: var(--blanco);
+}
+
+.cont-img{
+display: flex;
+flex-basis: 50%; 
+}
+.iPad{
+flex-basis: 100%;
+height: 450px;
+}
+/*cont2---------------------------------------------------------------------------------------------*/
+.cont2{
+width: 1200px;
+background: var(--grisClaro);
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.contenido-cont2{
+width: 560px;
+
+}
+
+.pregunta{
+color: var(--azul1);
+font-size: 35px;
+font-family: "public_sanslight" !important;
+}
+
+.parrafo-cont2{
+color: var(--azulGris);
+font-family: "public_sanslight" !important;
+}
+
+.options{
+display: flex;
+justify-content: center;
+align-items: flex-start;
+margin-top: 5%;
+margin-bottom: 5%;
+}
+
+.descripcion2{
+margin-left: 2%;
+}
+
+.img-cont2{
+width: 40px;
+}
+
+.imgMalaCont2{
+margin-top: -10px;
+}
+
+.texto3{
+margin-top: -3px;
+}
+
+.titulo1{
+color: var(--azul1);
+font-size: 20px;
+font-family: "public_sanslight" !important;
+}
+
+.parafoDescripcion1{
+color: var(--azulGris);
+font-family: "public_sanslight" !important;
+}
+/*cont3---------------------------------------------------------------------------------------------*/
+.cont3{
+width: 1200px;
+background: var(--gris1);
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family: "public_sanslight" !important;
+}
+
+.titulo-Cont3{
+color: var(--azul1);
+width: 100%;
+margin-top: 5%;
+margin-bottom: 5%;
+}
+
+.cards{
+display: flex;
+align-items: flex-start;
+text-decoration: none;
+}
+
+.card1{
+width: 185px;
+background: var(--blanco);
+text-decoration: none;
+}
+
+.card2{
+width: 185px;
+background: var(--blanco);
+text-decoration: none;
+margin-left: 2%;
+}
+
+.card1 img{
+width: 100%;
+height: 134.56px;
+}
+.card2 img{
+width: 100%;
+height: 100%;
+}
+
+.content{
+margin-left: 10%;
+margin-right: 2%;
+font-family: "public_sanslight" !important;
+}
+
+.name {
+margin-top: 13%;
+font-size: 8pt;
+color: var(--azulGris);
+}
+
+.titulo-Conte3 a{
+margin-top: -10px;
+text-decoration: none;
+font-size: 12pt;
+line-height: -5px;
+color: var(--azul1);
+}
+
+.parrafo-Cont3{
+font-size: 10pt;
+color: var(--azulGris);
+}
+
+/*cont4---------------------------------------------------------------------------------------------*/
+.cont4{
+width: 1200px;
+background: var(--azul1);
+display: flex;
+flex-direction: row;
+}
+.cont4{
+display: flex;
+flex-basis: 100%;
+}
+.footer, .boton, #menu-cont4_1, #menu-cont4_2{
+margin-top: 5%;
+margin-bottom: 5%;
+}
+.footer{
+display: flex;
+flex-basis: 30%;
+flex-direction: column;
+justify-content: center;
+}
+
+#logo2{
+align-self: center;
+}
+
+.ico{
+width: 180px;
+margin-top: 10%;
+margin-left: 15px;
+}
+
+.ico a{
+margin-left: 12px;
+}
+
+#menu-cont4_1 ul li,#menu-cont4_2 ul li{
+text-decoration: none;
+display: inline-block;
+}
+
+#menu-cont4_1{
+display: flex;
+flex-direction: column;
+width: 123px;
+flex-basis: 1fr;
+align-self: center;
+flex-wrap: wrap;
+}
+#menu-cont4_2{
+display: flex;
+flex-direction: column;
+width: 130px;
+flex-basis: 1fr;
+align-self: center;
+flex-wrap: wrap;
+}
+
+#menu-cont4_1 ul li a, #menu-cont4_2 ul li a {
+text-decoration: none;
+font-size: 10pt;
+color: var(--blanco);
+font-family: "public_sanslight";
+
+}
+
+.boton{
+display: flex;
+flex-direction: column;
+flex-basis: 40%;
+align-items: flex-end;
+align-self: center;
+}
+
+.call{
+font-size: 9pt;
+background: var(--boton);
+border: none;
+padding: 10px 37px 10px 37px;
+border-radius: 20px;
+color: var(--blanco);
+}
+
+.nam{
+font-size: 12pt;
+color: var(--azulGris);
+font-family: "public_sanslight" !important;
+align-items: flex-end;
+}
+}
